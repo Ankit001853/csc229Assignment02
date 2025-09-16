@@ -4,38 +4,46 @@ package com.mycompany.csc229_211review_lab02hw;
  *
  * @author MoaathAlrajab
  */
+
+/**
+ * The Person abstract class will hold the name, address, and age.
+ * Student will extend Person.
+ */
+
 public abstract class Person {
-	
 	private String name;
 	private String address;
 	private short age;
-	
-	// constructor that takes only two paras
+
+	// Constructor
 	public Person(String name, short age) {
 		super();
+
 		this.name = name;
 		this.age = age;
 	}
-	
+	// Getters and setters
 	public String getName() {
 		return name;
 	}
-	
+
 	public void setName(String name) {
 		this.name = name;
 	}
-	
+
+	//Abstract method (must be implemented in Student)
 	public abstract String getAddress() ;
-	
+
+
+
 	public abstract void setAddress(String address);
-	
-	
+
+
 	public short getAge() {
 		return age;
 	}
-	
 	public void setAge(short age) {
 		this.age = age;
 	}
-	
+
 }
